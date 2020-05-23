@@ -48,7 +48,7 @@ export default {
             });
           }
           if (
-            org[searchData.term] &&
+            org[searchData.term].toString() &&
             org[searchData.term].toString() === searchData.search
           ) {
             this.tickUsers(tickets, users, org);
@@ -65,7 +65,7 @@ export default {
             });
           }
           if (
-            ticket[searchData.term] &&
+            ticket[searchData.term].toString() &&
             ticket[searchData.term].toString() === searchData.search
           ) {
             this.orgUsers(organizations, users, ticket);

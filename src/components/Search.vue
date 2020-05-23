@@ -7,8 +7,8 @@
         <option value="organizations">Organizations</option>
         <option value="tickets">Tickets</option>
       </select>
-      <label for="entity"> Search Term</label>
-      <select v-on:change="termChanged" class="termbox">
+      <label for="term"> Search Term</label>
+      <select id="term" v-on:change="termChanged" class="termbox">
         <option v-for="data in optionData" :value="data" v-bind:key="data">{{
           data
         }}</option>

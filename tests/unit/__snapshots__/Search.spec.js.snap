@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Component 1`] = `
+<div>
+  <form>
+    <label
+      for="entity"
+    >
+      Search Entity 
+    </label>
+     
+    <select
+      class="termbox"
+      id="entity"
+    >
+      <option
+        value="users"
+      >
+        Users
+      </option>
+       
+      <option
+        value="organizations"
+      >
+        Organizations
+      </option>
+       
+      <option
+        value="tickets"
+      >
+        Tickets
+      </option>
+    </select>
+     
+    <label
+      for="term"
+    >
+       Search Term
+    </label>
+     
+    <select
+      class="termbox"
+      id="term"
+    >
+      <option
+        value="_id"
+      >
+        _id
+      </option>
+      <option
+        value="url"
+      >
+        url
+      </option>
+      <option
+        value="external_id"
+      >
+        external_id
+      </option>
+      <option
+        value="name"
+      >
+        name
+      </option>
+      <option
+        value="alias"
+      >
+        alias
+      </option>
+      <option
+        value="created_at"
+      >
+        created_at
+      </option>
+      <option
+        value="active"
+      >
+        active
+      </option>
+      <option
+        value="verified"
+      >
+        verified
+      </option>
+      <option
+        value="shared"
+      >
+        shared
+      </option>
+      <option
+        value="locale"
+      >
+        locale
+      </option>
+      <option
+        value="timezone"
+      >
+        timezone
+      </option>
+      <option
+        value="last_login_at"
+      >
+        last_login_at
+      </option>
+      <option
+        value="email"
+      >
+        email
+      </option>
+      <option
+        value="phone"
+      >
+        phone
+      </option>
+      <option
+        value="signature"
+      >
+        signature
+      </option>
+      <option
+        value="organization_id"
+      >
+        organization_id
+      </option>
+      <option
+        value="tags"
+      >
+        tags
+      </option>
+      <option
+        value="suspended"
+      >
+        suspended
+      </option>
+      <option
+        value="role"
+      >
+        role
+      </option>
+    </select>
+     
+    <input
+      class="termbox"
+      id="searchvalue"
+      name="searchvalue"
+      type="text"
+    />
+     
+    <button
+      class="btn"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+</div>
+`;

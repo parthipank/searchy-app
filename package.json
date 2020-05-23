@@ -23,6 +23,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "jest-serializer-vue": "^2.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -47,6 +48,15 @@
         "env": {
           "jest": true
         }
+      },
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
       }
     ]
   },
@@ -56,6 +66,9 @@
     "not dead"
   ],
   "jest": {
-    "preset": "@vue/cli-plugin-unit-jest"
+    "preset": "@vue/cli-plugin-unit-jest",
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ]
   }
 }

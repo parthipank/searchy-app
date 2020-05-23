@@ -5,7 +5,7 @@
       v-for="(item, name) in searchResultItem"
       v-bind:key="item + name"
     >
-      <p>
+      <p class="result-data">
         <b>{{ name }}</b> : {{ item }}
       </p>
     </div>
