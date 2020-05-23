@@ -99,7 +99,7 @@ export default {
       tempObj["name"] = org.name;
       tempObj["url"] = org.url;
       tempObj["external_id"] = org.external_id;
-      tempObj["domain_names"] = org.details.toString();
+      tempObj["domain_names"] = org.domain_names.toString();
       tempObj["created_at"] = org.created_at;
       tempObj["details"] = org.details;
       tempObj["shared_tickets"] = org.shared_tickets.toString();
