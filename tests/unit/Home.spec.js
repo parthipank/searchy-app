@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import Home from "../../src/views/Home";
-import Search from "../../src/components/Search";
+import SearchResults from "../../src/components/SearchResults";
 
 it("Expect desired search result", () => {
   const wrapper = mount(Home);
@@ -29,8 +29,7 @@ it("Expect desired search result", () => {
   wrapper.find("#term").setValue("name");
   wrapper.find("#searchvalue").setValue("Nutralab");
   wrapper.find("button").trigger("click");
+  // expect(wrapper.find({ name: "SearchResults" }).exists()).toBe(true);
 
-  //   const result = searchWrapper.find(".result-data");
-  //   expect(result.element.text()).toBe("name : Nutralab");
   expect(wrapper.element).toMatchSnapshot();
 });

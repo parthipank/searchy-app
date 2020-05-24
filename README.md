@@ -20,10 +20,18 @@ npm run build
 npm run test:unit
 ```
 
-### Lints and fixes files
+## How to use Searchy
 ```
-npm run lint
+- Select your desired entity from the first dropdown. (Users, Organizations, Tickets)
+
+- Searchable terms will get populated in the second search term dropdown. Select the searching term for the data you are looking for.
+
+- Enter a precise search value for the search term in the search text box and hit enter to get your search results.
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## How searchy works under the hood
+```
+- Based on the search entity you've selected (Users, Organizations, Tickets), searchy will also give you the other necessary entity values which are related.
+
+- Examxple: Searching a particular user will give you his/her assignee ticket, submitter ticket and also the organization name.
+```
